@@ -1,0 +1,6 @@
+2023/06/05 18:20:07 [alert] 13872#15264: OpenEvent("ngx_master_12852") failed (2: FormatMessage() error:(15100))
+2023/06/13 12:59:43 [alert] 18240#18088: OpenEvent("ngx_master_2336") failed (2: FormatMessage() error:(15100))
+2023/06/14 13:03:39 [alert] 17476#8184: OpenEvent("ngx_master_2216") failed (2: FormatMessage() error:(15100))
+2023/06/15 14:13:50 [error] 13344#8188: *1 connect() failed (10061: FormatMessage() error:(15100)) while connecting to upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10003", host: "teste.local", referrer: "http://teste.local/wp-admin/customize.php?return=%2Fwp-admin%2Fplugins.php%3Fplugin_status%3Dall%26paged%3D1%26s"
+2023/06/15 14:13:52 [error] 13344#8188: *1 connect() failed (10061: FormatMessage() error:(15105)) while connecting to upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/admin-ajax.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10004", host: "teste.local", referrer: "http://teste.local/wp-admin/customize.php?return=%2Fwp-admin%2Fplugins.php%3Fplugin_status%3Dall%26paged%3D1%26s"
+2023/06/22 21:23:03 [alert] 14128#7692: OpenEvent("ngx_master_1272") failed (2: FormatMessage() error:(15100))

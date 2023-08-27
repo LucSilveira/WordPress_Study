@@ -1,0 +1,208 @@
+[06-Jun-2023 12:35:39 UTC] Sync process for Gutenberg Blocks has started.
+[06-Jun-2023 12:35:39 UTC] CATEGORY:Importing categories..
+[06-Jun-2023 12:35:39 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[06-Jun-2023 12:35:39 UTC] CATEGORY:Completed category import.
+[06-Jun-2023 12:35:39 UTC] BLOCK: Getting Total Blocks
+[06-Jun-2023 12:35:39 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[06-Jun-2023 12:35:39 UTC] BLOCK: Requests count 4
+[06-Jun-2023 12:35:39 UTC] BLOCK: Importing request 1 ..
+[06-Jun-2023 12:35:39 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[06-Jun-2023 12:35:39 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[06-Jun-2023 12:35:39 UTC] BLOCK: Completed request 1
+[06-Jun-2023 12:35:39 UTC] BLOCK: Importing request 2 ..
+[06-Jun-2023 12:35:39 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[06-Jun-2023 12:35:40 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[06-Jun-2023 12:35:40 UTC] BLOCK: Completed request 2
+[06-Jun-2023 12:35:40 UTC] BLOCK: Importing request 3 ..
+[06-Jun-2023 12:35:40 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[06-Jun-2023 12:35:40 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[06-Jun-2023 12:35:40 UTC] BLOCK: Completed request 3
+[06-Jun-2023 12:35:40 UTC] BLOCK: Importing request 4 ..
+[06-Jun-2023 12:35:40 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[06-Jun-2023 12:35:40 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[06-Jun-2023 12:35:40 UTC] BLOCK: Completed request 4
+[06-Jun-2023 12:35:40 UTC] SITE: Getting Total Sites
+[06-Jun-2023 12:35:40 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[06-Jun-2023 12:35:40 UTC] SITE: Request count 2
+[06-Jun-2023 12:35:40 UTC] SITE: Importing request 1 ..
+[06-Jun-2023 12:35:40 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[06-Jun-2023 12:35:40 UTC] SITE: Storing in option ast-block-templates-sites-1
+[06-Jun-2023 12:35:40 UTC] SITE: Completed request 1
+[06-Jun-2023 12:35:40 UTC] SITE: Importing request 2 ..
+[06-Jun-2023 12:35:40 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[06-Jun-2023 12:35:40 UTC] SITE: Storing in option ast-block-templates-sites-2
+[06-Jun-2023 12:35:40 UTC] SITE: Completed request 2
+[06-Jun-2023 12:35:40 UTC] Sync process for Gutenberg Blocks is done.
+[20-Jun-2023 22:01:04 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(548): WPForms\Admin\Challenge->challenge_modal_html('progress')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 22:01:35 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(544): WPForms\Admin\Challenge->challenge_modal_html('start')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 22:01:43 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(548): WPForms\Admin\Challenge->challenge_modal_html('progress')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 22:02:11 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(548): WPForms\Admin\Challenge->challenge_modal_html('progress')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 22:05:28 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(544): WPForms\Admin\Challenge->challenge_modal_html('start')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 22:06:54 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(544): WPForms\Admin\Challenge->challenge_modal_html('start')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 22:14:38 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(544): WPForms\Admin\Challenge->challenge_modal_html('start')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 22:37:54 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(544): WPForms\Admin\Challenge->challenge_modal_html('start')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 22:59:10 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(544): WPForms\Admin\Challenge->challenge_modal_html('start')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[20-Jun-2023 23:00:35 UTC] Erro de evento de reagendamento do cron para o gancho: action_scheduler_run_queue, código de erro: invalid_schedule, mensagem de erro: Agendamento do evento não existe., dados: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[20-Jun-2023 23:06:59 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(544): WPForms\Admin\Challenge->challenge_modal_html('start')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[22-Jun-2023 21:42:53 UTC] Erro de evento de reagendamento do cron para o gancho: action_scheduler_run_queue, código de erro: could_not_set, mensagem de erro: Não foi possível salvar a lista de evento do cron, dados: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[22-Jun-2023 21:42:54 UTC] Erro de evento de reagendamento do cron para o gancho: wp_privacy_delete_old_export_files, código de erro: could_not_set, mensagem de erro: Não foi possível salvar a lista de evento do cron, dados: {"schedule":"hourly","args":[],"interval":3600}
+[22-Jun-2023 21:42:54 UTC] Erro de evento não agendado do cron para o gancho: wp_privacy_delete_old_export_files, código de erro: could_not_set, mensagem de erro: Não foi possível salvar a lista de evento do cron, dados: {"schedule":"hourly","args":[],"interval":3600}
+[22-Jun-2023 21:42:54 UTC] Erro de evento de reagendamento do cron para o gancho: wp_update_themes, código de erro: could_not_set, mensagem de erro: Não foi possível salvar a lista de evento do cron, dados: {"schedule":"twicedaily","args":[],"interval":43200}
+[22-Jun-2023 21:42:54 UTC] Erro de evento não agendado do cron para o gancho: wp_update_themes, código de erro: could_not_set, mensagem de erro: Não foi possível salvar a lista de evento do cron, dados: {"schedule":"twicedaily","args":[],"interval":43200}
+[22-Jun-2023 21:42:59 UTC] Erro de evento de reagendamento do cron para o gancho: wp_version_check, código de erro: could_not_set, mensagem de erro: Não foi possível salvar a lista de evento do cron, dados: {"schedule":"twicedaily","args":[],"interval":43200}
+[22-Jun-2023 21:43:42 UTC] PHP Fatal error:  Uncaught ValueError: Unknown format specifier "�" in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php:31
+Stack trace:
+#0 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php(31): sprintf('Conclua o <b>WP...', 5, 'minutos')
+#1 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(110): require('C:\\Users\\lucas....')
+#2 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Helpers\Templates.php(127): WPForms\Helpers\Templates::include_html('admin/challenge...', Array, true)
+#3 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\includes\functions\escape-sanitize.php(410): WPForms\Helpers\Templates::get_html('admin/challenge...', Array, true)
+#4 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(574): wpforms_render('admin/challenge...', Array, true)
+#5 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\src\Admin\Challenge.php(544): WPForms\Admin\Challenge->challenge_modal_html('start')
+#6 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(308): WPForms\Admin\Challenge->challenge_html('')
+#7 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin-footer.php(78): do_action('admin_footer', '')
+#10 C:\Users\lucas.portal\Local Sites\teste\app\public\wp-admin\admin.php(297): require_once('C:\\Users\\lucas....')
+#11 {main}
+  thrown in C:\Users\lucas.portal\Local Sites\teste\app\public\wp-content\plugins\wpforms-lite\templates\admin\challenge\modal.php on line 31
+[22-Jun-2023 21:44:24 UTC] Erro de evento de reagendamento do cron para o gancho: action_scheduler_run_queue, código de erro: invalid_schedule, mensagem de erro: Agendamento do evento não existe., dados: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
