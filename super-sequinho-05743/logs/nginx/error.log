@@ -1,0 +1,4 @@
+2023/07/14 18:45:51 [alert] 15864#7932: OpenEvent("ngx_master_14736") failed (2: FormatMessage() error:(15100))
+2023/07/15 09:43:05 [error] 8876#10084: *5395 WSARecv() failed (10054: FormatMessage() error:(15100)) while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-cron.php?doing_wp_cron=1689424985.3846879005432128906250 HTTP/1.0", upstream: "fastcgi://127.0.0.1:10045", host: "super-sequinho-05743.local"
+2023/07/15 09:43:06 [alert] 14280#13660: OpenEvent("ngx_master_8496") failed (2: FormatMessage() error:(15100))
+2023/07/17 21:16:42 [alert] 10948#12376: OpenEvent("ngx_master_4496") failed (2: FormatMessage() error:(15100))

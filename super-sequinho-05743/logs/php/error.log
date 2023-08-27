@@ -1,0 +1,1 @@
+[17-Jul-2023 22:44:20 UTC] Erro de evento de reagendamento do cron para o gancho: action_scheduler_run_queue, código de erro: invalid_schedule, mensagem de erro: Agendamento do evento não existe., dados: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
